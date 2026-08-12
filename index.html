@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DVRII | Inicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            uabcsBlue: '#1475a8',
+            uabcsDark: '#333333',
+            dvrBlue: '#2f80b7',
+            dvrLight: '#f5f5f5',
+            quickYellow: '#ffe300'
+          },
+          fontFamily: {
+            sans: ['Arial', 'Helvetica', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="bg-white text-neutral-950 font-sans">
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand-block" href="#" aria-label="Universidad Autónoma de Baja California Sur">
+        <div class="logo-slot logo-slot--seal">UABCS</div>
+        <strong>Universidad Autónoma<br>de Baja California Sur</strong>
+      </a>
+
+      <div class="anniversary-slot">49<br><span>Aniversario</span></div>
+
+      <nav class="topbar-nav" aria-label="Navegación institucional">
+        <a href="#">Menú</a>
+        <span aria-hidden="true"></span>
+        <a href="#">Nuestra Universidad</a>
+        <span aria-hidden="true"></span>
+        <a href="#">Oferta Educativa</a>
+        <span aria-hidden="true"></span>
+        <a href="#">Servicios</a>
+      </nav>
+
+      <form class="quick-search" aria-label="Búsqueda rápida">
+        <label for="site-search">Búsqueda rápida</label>
+        <input id="site-search" type="search" />
+        <button type="submit" aria-label="Buscar">⌕</button>
+      </form>
+    </div>
+
+    <div class="mainnav-wrap">
+      <nav class="mainnav" aria-label="Navegación principal DVRII">
+        <a class="is-active" href="#">Inicio</a>
+        <a href="#">Convocatorias</a>
+        <a href="#">Egresados</a>
+        <a class="dvr-logo" href="#" aria-label="DVRII">
+          <div class="logo-slot logo-slot--dvr">DVRII</div>
+        </a>
+        <a href="#">Empresas y<br>Organizaciones</a>
+        <a href="#">Educación<br>Continua</a>
+        <a href="#">UA<br>Pichilingue</a>
+      </nav>
+      <p>Dirección de Vinculación, Relaciones Institucionales e Internacionalización</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-carousel" aria-label="Carrusel principal">
+      <button class="carousel-arrow carousel-arrow--left" type="button" aria-label="Anterior">‹</button>
+
+      <div class="carousel-track">
+        <article class="carousel-slide is-active">
+          <div class="slide-media">
+            <span>Imagen carrusel 1<br>assets/images/carrusel-1.png</span>
+          </div>
+          <div class="hero-caption">
+            <h1>CONVOCATORIAS</h1>
+            <p>Da Click para conocerlas</p>
+          </div>
+        </article>
+
+        <article class="carousel-slide">
+          <div class="slide-media">
+            <span>Imagen carrusel 2<br>assets/images/carrusel-2.png</span>
+          </div>
+          <div class="hero-caption">
+            <h1>CONVOCATORIAS</h1>
+            <p>Da Click para conocerlas</p>
+          </div>
+        </article>
+
+        <article class="carousel-slide">
+          <div class="slide-media">
+            <span>Imagen carrusel 3<br>assets/images/carrusel-3.png</span>
+          </div>
+          <div class="hero-caption">
+            <h1>CONVOCATORIAS</h1>
+            <p>Da Click para conocerlas</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="carousel-arrow carousel-arrow--right" type="button" aria-label="Siguiente">›</button>
+    </section>
+
+    <section class="quick-access-section" aria-labelledby="quick-title">
+      <div class="social-rail" aria-label="Redes sociales">
+        <a class="facebook" href="#" aria-label="Facebook">f</a>
+        <a class="twitter" href="#" aria-label="Twitter">t</a>
+        <a class="instagram" href="#" aria-label="Instagram">ig</a>
+      </div>
+
+      <h2 id="quick-title">Accesos Rápidos</h2>
+      <div class="quick-grid">
+        <a class="quick-card" href="#">
+          <div class="icon-slot">Icono</div>
+          <span>Convocatorias</span>
+        </a>
+        <a class="quick-card" href="#">
+          <div class="icon-slot">Icono</div>
+          <span>Educación<br>Continua</span>
+        </a>
+        <a class="quick-card" href="#">
+          <div class="icon-slot">Icono</div>
+          <span>Servicios</span>
+        </a>
+        <a class="quick-card" href="#">
+          <div class="icon-slot">Icono</div>
+          <span>Boletín<br>Informativo</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-section" aria-labelledby="about-title">
+      <div class="section-inner">
+        <h2 id="about-title" class="section-title">¿Quienes Somos?</h2>
+        <p>
+          La Dirección de Vinculación, Relaciones Institucionales e Internacionalización
+          <strong>(DVRII)</strong> coordina integralmente la función sustantiva de vinculación en
+          nuestra universidad, la cual, en su amplio sentido, establece una relación con la sociedad
+          no solo de carácter técnico sino también en aspectos de la docencia, la investigación y la
+          difusión de la cultura, atendiendo a la necesidad de articular con pertinencia social a
+          nuestra comunidad universitaria con su entorno.
+        </p>
+      </div>
+    </section>
+
+    <section class="english-section" aria-labelledby="english-title">
+      <div class="section-inner">
+        <h2 id="english-title" class="section-title">English</h2>
+        <div class="english-grid">
+          <a class="english-card" href="#">
+            <div class="image-slot">Imagen</div>
+            <strong>Dossier</strong>
+          </a>
+          <a class="english-card" href="#">
+            <div class="image-slot">Imagen</div>
+            <strong>Institutional<br>Overview</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-mark" aria-hidden="true"></div>
+
+    <div class="footer-column footer-column--accent">
+      <h2>Enlaces de interés</h2>
+      <a href="#">Contraloría Social</a>
+      <a href="#">Oferta Educativa</a>
+      <a href="#">Responsabilidad Social Universitaria</a>
+      <a href="#">Transparencia</a>
+      <a class="footer-map" href="#">Ubicación y mapa</a>
+    </div>
+
+    <div class="footer-column">
+      <h2>Nuestra universidad</h2>
+      <a href="#">Calendario Escolar</a>
+      <a href="#">Curriculum Institucional</a>
+      <a href="#">Mapa del Campus</a>
+      <a href="#">Normatividad</a>
+      <a href="#">Órganos de Gobierno</a>
+    </div>
+
+    <address class="footer-address">
+      <p>Boulevard Forjadores S/N entre Calle Av.<br>Universidad y Calle Félix Agramont Cota, Col.<br>Universitario.</p>
+      <p>La Paz, Baja California Sur, México.</p>
+      <a href="tel:6121238800">612-123-8800</a>
+    </address>
+
+    <button class="accessibility-button" aria-label="Accesibilidad">◎</button>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
