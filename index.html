@@ -11,10 +11,7 @@
         extend: {
           colors: {
             uabcsBlue: '#1475a8',
-            uabcsDark: '#333333',
-            dvrBlue: '#2f80b7',
-            dvrLight: '#f5f5f5',
-            quickYellow: '#ffe300'
+            dvrBlue: '#2f80b7'
           },
           fontFamily: {
             sans: ['Arial', 'Helvetica', 'sans-serif']
@@ -28,7 +25,7 @@
 <body class="bg-white text-neutral-950 font-sans">
   <header class="site-header">
     <div class="topbar">
-      <a class="brand-block" href="#" aria-label="Universidad Autónoma de Baja California Sur">
+      <a class="brand-block" href="./index.html" aria-label="Universidad Autónoma de Baja California Sur">
         <div class="logo-slot logo-slot--seal">UABCS</div>
         <strong>Universidad Autónoma<br>de Baja California Sur</strong>
       </a>
@@ -54,10 +51,10 @@
 
     <div class="mainnav-wrap">
       <nav class="mainnav" aria-label="Navegación principal DVRII">
-        <a class="is-active" href="#">Inicio</a>
-        <a href="#">Convocatorias</a>
+        <a class="is-active" href="./index.html">Inicio</a>
+        <a href="./pages/convocatorias.html">Convocatorias</a>
         <a href="#">Egresados</a>
-        <a class="dvr-logo" href="#" aria-label="DVRII">
+        <a class="dvr-logo" href="./index.html" aria-label="DVRII">
           <div class="logo-slot logo-slot--dvr">DVRII</div>
         </a>
         <a href="#">Empresas y<br>Organizaciones</a>
@@ -70,41 +67,41 @@
 
   <main>
     <section class="hero-carousel" aria-label="Carrusel principal">
-      <button class="carousel-arrow carousel-arrow--left" type="button" aria-label="Anterior">‹</button>
+      <article id="slide-1" class="carousel-slide carousel-slide--first">
+        <a class="carousel-arrow carousel-arrow--left" href="#slide-3" aria-label="Anterior">‹</a>
+        <a class="slide-media" href="./pages/convocatorias.html">
+          <span>Imagen carrusel 1<br>assets/images/carrusel-1.png</span>
+        </a>
+        <a class="hero-caption" href="./pages/convocatorias.html">
+          <h1>CONVOCATORIAS</h1>
+          <p>Da Click para conocerlas</p>
+        </a>
+        <a class="carousel-arrow carousel-arrow--right" href="#slide-2" aria-label="Siguiente">›</a>
+      </article>
 
-      <div class="carousel-track">
-        <article class="carousel-slide is-active">
-          <div class="slide-media">
-            <span>Imagen carrusel 1<br>assets/images/carrusel-1.png</span>
-          </div>
-          <div class="hero-caption">
-            <h1>CONVOCATORIAS</h1>
-            <p>Da Click para conocerlas</p>
-          </div>
-        </article>
+      <article id="slide-2" class="carousel-slide">
+        <a class="carousel-arrow carousel-arrow--left" href="#slide-1" aria-label="Anterior">‹</a>
+        <a class="slide-media" href="./pages/convocatorias.html">
+          <span>Imagen carrusel 2<br>assets/images/carrusel-2.png</span>
+        </a>
+        <a class="hero-caption" href="./pages/convocatorias.html">
+          <h1>CONVOCATORIAS</h1>
+          <p>Da Click para conocerlas</p>
+        </a>
+        <a class="carousel-arrow carousel-arrow--right" href="#slide-3" aria-label="Siguiente">›</a>
+      </article>
 
-        <article class="carousel-slide">
-          <div class="slide-media">
-            <span>Imagen carrusel 2<br>assets/images/carrusel-2.png</span>
-          </div>
-          <div class="hero-caption">
-            <h1>CONVOCATORIAS</h1>
-            <p>Da Click para conocerlas</p>
-          </div>
-        </article>
-
-        <article class="carousel-slide">
-          <div class="slide-media">
-            <span>Imagen carrusel 3<br>assets/images/carrusel-3.png</span>
-          </div>
-          <div class="hero-caption">
-            <h1>CONVOCATORIAS</h1>
-            <p>Da Click para conocerlas</p>
-          </div>
-        </article>
-      </div>
-
-      <button class="carousel-arrow carousel-arrow--right" type="button" aria-label="Siguiente">›</button>
+      <article id="slide-3" class="carousel-slide">
+        <a class="carousel-arrow carousel-arrow--left" href="#slide-2" aria-label="Anterior">‹</a>
+        <a class="slide-media" href="./pages/convocatorias.html">
+          <span>Imagen carrusel 3<br>assets/images/carrusel-3.png</span>
+        </a>
+        <a class="hero-caption" href="./pages/convocatorias.html">
+          <h1>CONVOCATORIAS</h1>
+          <p>Da Click para conocerlas</p>
+        </a>
+        <a class="carousel-arrow carousel-arrow--right" href="#slide-1" aria-label="Siguiente">›</a>
+      </article>
     </section>
 
     <section class="quick-access-section" aria-labelledby="quick-title">
@@ -116,7 +113,7 @@
 
       <h2 id="quick-title">Accesos Rápidos</h2>
       <div class="quick-grid">
-        <a class="quick-card" href="#">
+        <a class="quick-card" href="./pages/convocatorias.html">
           <div class="icon-slot">Icono</div>
           <span>Convocatorias</span>
         </a>
@@ -195,7 +192,5 @@
 
     <button class="accessibility-button" aria-label="Accesibilidad">◎</button>
   </footer>
-
-  <script src="./js/main.js"></script>
 </body>
 </html>

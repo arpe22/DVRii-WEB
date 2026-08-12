@@ -1,0 +1,126 @@
+.site-header {
+  background: #fff;
+}
+
+.topbar {
+  display: grid;
+  grid-template-columns: 270px 140px minmax(420px, 1fr) 414px;
+  align-items: center;
+  min-height: 84px;
+  color: #fff;
+  background: var(--blue);
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #666;
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 82px;
+  padding: 0 14px 0 2px;
+  background: #3b3b3b;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.anniversary-slot {
+  justify-self: start;
+  width: 120px;
+  height: 70px;
+  color: #f0bd38;
+  border-color: rgba(240, 189, 56, .5);
+  background: rgba(255, 255, 255, .08);
+  font-size: 31px;
+  line-height: .75;
+}
+
+.anniversary-slot span {
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.topbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-self: start;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.topbar-nav span {
+  width: 2px;
+  height: 25px;
+  background: rgba(255, 255, 255, .75);
+}
+
+.quick-search {
+  display: grid;
+  grid-template-columns: 138px 1fr 58px;
+  gap: 8px;
+  align-items: center;
+  justify-self: end;
+  width: 414px;
+  padding-right: 10px;
+}
+
+.quick-search label {
+  display: grid;
+  place-items: center;
+  height: 30px;
+  color: #1a1a1a;
+  background: #ffe300;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.quick-search input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.quick-search button {
+  height: 25px;
+  color: #fff;
+  background: #5d8df4;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mainnav-wrap {
+  padding: 12px 48px 17px;
+  text-align: center;
+}
+
+.mainnav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 150px repeat(3, 1fr);
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto 8px;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.mainnav a {
+  min-height: 72px;
+  display: grid;
+  place-items: center;
+}
+
+.mainnav .is-active {
+  font-weight: 800;
+}
+
+.mainnav-wrap p {
+  margin: 0;
+  font-size: 20px;
+}

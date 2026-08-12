@@ -1,0 +1,120 @@
+.page-hero {
+  position: relative;
+  height: 202px;
+  overflow: hidden;
+  background: #dfe6ea;
+}
+
+.page-hero-media {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, .9);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  background:
+    linear-gradient(rgba(0, 0, 0, .12), rgba(0, 0, 0, .12)),
+    linear-gradient(135deg, #cbdce5, #739dbb);
+  border: 2px dashed rgba(255, 255, 255, .55);
+}
+
+.page-hero h1 {
+  position: absolute;
+  right: 0;
+  top: 58px;
+  min-width: 430px;
+  margin: 0;
+  padding: 14px 30px;
+  color: #fff;
+  text-align: center;
+  background: rgba(31, 117, 169, .86);
+  border-radius: 18px 0 0 18px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.calls-section {
+  padding: 54px 0 74px;
+}
+
+.calls-section--white {
+  background: #fff;
+}
+
+.calls-section--gray {
+  background: var(--muted);
+}
+
+.calls-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 64px;
+  align-items: start;
+  margin-top: 28px;
+}
+
+.call-card {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.poster-slot {
+  display: grid;
+  place-items: center;
+  width: 175px;
+  height: 220px;
+  padding: 16px;
+  color: #fff;
+  text-align: center;
+  border: 2px dashed rgba(255, 255, 255, .65);
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+.poster-slot--becas {
+  background: linear-gradient(135deg, #a24c25, #701243);
+}
+
+.poster-slot--ieebcs {
+  background: linear-gradient(135deg, #ffdbe9, #ed2b87);
+}
+
+.poster-slot--croc {
+  background: linear-gradient(135deg, #fedb3b, #df241d 55%, #f8f8f8 56%);
+  color: #111;
+}
+
+.more-calls {
+  display: grid;
+  justify-items: center;
+  gap: 50px;
+  padding: 48px 24px 68px;
+  text-align: center;
+  background: var(--muted);
+}
+
+.more-calls h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.primary-link {
+  display: grid;
+  place-items: center;
+  width: min(100%, 490px);
+  min-height: 54px;
+  color: #fff;
+  background: var(--blue-soft);
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 900;
+}

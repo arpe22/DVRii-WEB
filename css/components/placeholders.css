@@ -1,0 +1,45 @@
+.logo-slot,
+.anniversary-slot,
+.icon-slot,
+.image-slot {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--blue-soft);
+  border: 2px dashed rgba(47, 128, 183, .45);
+  background: rgba(47, 128, 183, .08);
+  text-align: center;
+  font-weight: 700;
+}
+
+.logo-slot--seal {
+  width: 78px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.logo-slot--dvr {
+  width: 90px;
+  height: 84px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.icon-slot {
+  width: 94px;
+  height: 94px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.image-slot {
+  width: 205px;
+  height: 250px;
+  color: #fff;
+  border-color: rgba(255, 255, 255, .6);
+  border-radius: 22px;
+  background:
+    linear-gradient(rgba(0, 0, 0, .18), rgba(0, 0, 0, .18)),
+    linear-gradient(135deg, #ddeaf0, #6c8796);
+}

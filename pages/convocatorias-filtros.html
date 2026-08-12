@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DVRII | Búsqueda de convocatorias</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            uabcsBlue: '#1475a8',
+            dvrBlue: '#2f80b7'
+          },
+          fontFamily: {
+            sans: ['Arial', 'Helvetica', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-white text-neutral-950 font-sans">
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand-block" href="../index.html" aria-label="Universidad Autónoma de Baja California Sur">
+        <div class="logo-slot logo-slot--seal">UABCS</div>
+        <strong>Universidad Autónoma<br>de Baja California Sur</strong>
+      </a>
+
+      <div class="anniversary-slot">49<br><span>Aniversario</span></div>
+
+      <nav class="topbar-nav" aria-label="Navegación institucional">
+        <a href="#">Menú</a>
+        <span aria-hidden="true"></span>
+        <a href="#">Nuestra Universidad</a>
+        <span aria-hidden="true"></span>
+        <a href="#">Oferta Educativa</a>
+        <span aria-hidden="true"></span>
+        <a href="#">Servicios</a>
+      </nav>
+
+      <form class="quick-search" aria-label="Búsqueda rápida">
+        <label for="site-search">Búsqueda rápida</label>
+        <input id="site-search" type="search" />
+        <button type="submit" aria-label="Buscar">⌕</button>
+      </form>
+    </div>
+
+    <div class="mainnav-wrap">
+      <nav class="mainnav" aria-label="Navegación principal DVRII">
+        <a href="../index.html">Inicio</a>
+        <a class="is-active" href="./convocatorias.html">Convocatorias</a>
+        <a href="#">Egresados</a>
+        <a class="dvr-logo" href="../index.html" aria-label="DVRII">
+          <div class="logo-slot logo-slot--dvr">DVRII</div>
+        </a>
+        <a href="#">Empresas y<br>Organizaciones</a>
+        <a href="#">Educación<br>Continua</a>
+        <a href="#">UA<br>Pichilingue</a>
+      </nav>
+      <p>Dirección de Vinculación, Relaciones Institucionales e Internacionalización</p>
+    </div>
+  </header>
+
+  <main class="filters-page">
+    <div class="section-inner">
+      <a class="back-link" href="./convocatorias.html" aria-label="Volver a convocatorias">‹</a>
+
+      <section class="filters-panel" aria-labelledby="filters-title">
+        <h1 id="filters-title" class="section-title">Busqueda de convocatorias</h1>
+
+        <form class="filters-form" aria-label="Filtros de convocatorias">
+          <label class="filter-field filter-field--search">
+            <span>Buscar convocatoria</span>
+            <input type="search" placeholder="Buscar convocatoria" />
+          </label>
+
+          <label class="filter-field">
+            <span>Periodo</span>
+            <input type="text" placeholder="Periodo" />
+          </label>
+
+          <label class="filter-field">
+            <span>Mes</span>
+            <input type="text" placeholder="Mes" />
+          </label>
+
+          <label class="filter-field">
+            <span>Tipo</span>
+            <input type="text" placeholder="Tipo" />
+          </label>
+
+          <button class="filter-chip" type="button">
+            <span>2025-I</span>
+            <strong aria-hidden="true">×</strong>
+          </button>
+
+          <button class="filter-chip" type="button">
+            <span>Enero</span>
+            <strong aria-hidden="true">×</strong>
+          </button>
+
+          <button class="filter-chip" type="button">
+            <span>Alumnos</span>
+            <strong aria-hidden="true">×</strong>
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <section class="results-band results-band--white" aria-label="Resultados de convocatorias">
+      <div class="section-inner">
+        <div class="results-grid">
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-band results-band--gray" aria-label="Más resultados">
+      <div class="section-inner">
+        <div class="results-grid">
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-band results-band--white" aria-label="Últimos resultados">
+      <div class="section-inner">
+        <div class="results-grid">
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+          <a class="result-card" href="#">
+            <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
+            <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
+            <strong>Becas para mexicanos</strong>
+          </a>
+        </div>
+
+        <nav class="pagination" aria-label="Paginación">
+          <a href="#" aria-label="Página anterior">←</a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#" aria-label="Página siguiente">→</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-mark" aria-hidden="true"></div>
+
+    <div class="footer-column footer-column--accent">
+      <h2>Enlaces de interés</h2>
+      <a href="#">Contraloría Social</a>
+      <a href="#">Oferta Educativa</a>
+      <a href="#">Responsabilidad Social Universitaria</a>
+      <a href="#">Transparencia</a>
+      <a class="footer-map" href="#">Ubicación y mapa</a>
+    </div>
+
+    <div class="footer-column">
+      <h2>Nuestra universidad</h2>
+      <a href="#">Calendario Escolar</a>
+      <a href="#">Curriculum Institucional</a>
+      <a href="#">Mapa del Campus</a>
+      <a href="#">Normatividad</a>
+      <a href="#">Órganos de Gobierno</a>
+    </div>
+
+    <address class="footer-address">
+      <p>Boulevard Forjadores S/N entre Calle Av.<br>Universidad y Calle Félix Agramont Cota, Col.<br>Universitario.</p>
+      <p>La Paz, Baja California Sur, México.</p>
+      <a href="tel:6121238800">612-123-8800</a>
+    </address>
+
+    <button class="accessibility-button" aria-label="Accesibilidad">◎</button>
+  </footer>
+</body>
+</html>

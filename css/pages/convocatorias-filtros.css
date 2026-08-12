@@ -1,0 +1,166 @@
+.filters-page {
+  background: #fff;
+}
+
+.back-link {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-top: 24px;
+  color: #111;
+  border: 3px solid #111;
+  border-radius: 50%;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.filters-panel {
+  padding: 34px 0 58px;
+}
+
+.filters-panel .section-title {
+  margin-bottom: 46px;
+  font-size: 30px;
+}
+
+.filters-form {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
+  gap: 34px 28px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.filter-field {
+  display: grid;
+}
+
+.filter-field span {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.filter-field input,
+.filter-chip {
+  width: 100%;
+  min-height: 45px;
+  padding: 0 15px;
+  color: #888;
+  background: #fff;
+  border: 1px solid #b9b9b9;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.filter-field--search input {
+  padding-left: 34px;
+  background:
+    linear-gradient(transparent, transparent),
+    #fff;
+}
+
+.filter-field--search {
+  position: relative;
+}
+
+.filter-field--search::before {
+  position: absolute;
+  left: 11px;
+  top: 13px;
+  content: '⌕';
+  color: #333;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.filter-chip {
+  display: flex;
+  grid-column: span 1;
+  align-items: center;
+  justify-content: space-between;
+  color: #888;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.filter-chip:nth-of-type(1) {
+  grid-column: 2;
+}
+
+.filter-chip strong {
+  color: #222;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.results-band {
+  padding: 44px 0 48px;
+}
+
+.results-band--white {
+  background: #fff;
+}
+
+.results-band--gray {
+  background: var(--muted);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 72px;
+}
+
+.result-card {
+  display: grid;
+  align-content: start;
+  width: 220px;
+  max-width: 100%;
+  justify-self: center;
+}
+
+.result-card .poster-slot {
+  width: 220px;
+  height: 270px;
+}
+
+.result-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding-left: 8px;
+  color: #858585;
+  border-left: 3px solid var(--blue-soft);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.result-card strong {
+  padding-left: 8px;
+  border-left: 3px solid var(--blue-soft);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 72px;
+  padding-right: 58px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.pagination a {
+  min-width: 12px;
+  text-align: center;
+}
