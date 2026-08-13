@@ -5,7 +5,6 @@
 @import url('./components/placeholders.css');
 @import url('./components/carousel.css');
 @import url('./components/section-title.css');
-@import url('./pages/home.css');
-@import url('./pages/convocatorias.css');
-@import url('./pages/convocatorias-filtros.css');
-@import url('./base/responsive.css');
+@import url('./components/poster-card.css');
+@import url('./components/buttons.css');
+@import url('./components/document-link.css');

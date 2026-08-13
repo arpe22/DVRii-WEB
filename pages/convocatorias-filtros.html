@@ -1,26 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DVRII | Búsqueda de convocatorias</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            uabcsBlue: '#1475a8',
-            dvrBlue: '#2f80b7'
-          },
-          fontFamily: {
-            sans: ['Arial', 'Helvetica', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
-  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="../css/app.css" />
+  <link rel="stylesheet" href="../css/pages/convocatorias-filtros.css" />
 </head>
 <body class="bg-white text-neutral-950 font-sans">
   <header class="site-header">
@@ -53,11 +40,11 @@
       <nav class="mainnav" aria-label="Navegación principal DVRII">
         <a href="../index.html">Inicio</a>
         <a class="is-active" href="./convocatorias.html">Convocatorias</a>
-        <a href="#">Egresados</a>
+        <a href="./egresados.html">Egresados</a>
         <a class="dvr-logo" href="../index.html" aria-label="DVRII">
           <div class="logo-slot logo-slot--dvr">DVRII</div>
         </a>
-        <a href="#">Empresas y<br>Organizaciones</a>
+        <a href="./empresas-organizaciones.html">Empresas y<br>Organizaciones</a>
         <a href="#">Educación<br>Continua</a>
         <a href="#">UA<br>Pichilingue</a>
       </nav>
@@ -67,7 +54,9 @@
 
   <main class="filters-page">
     <div class="section-inner">
-      <a class="back-link" href="./convocatorias.html" aria-label="Volver a convocatorias">‹</a>
+      <a class="back-link" href="./convocatorias.html" aria-label="Volver a convocatorias">
+        <span class="back-icon-placeholder">Icono</span>
+      </a>
 
       <section class="filters-panel" aria-labelledby="filters-title">
         <h1 id="filters-title" class="section-title">Busqueda de convocatorias</h1>
@@ -114,22 +103,22 @@
     <section class="results-band results-band--white" aria-label="Resultados de convocatorias">
       <div class="section-inner">
         <div class="results-grid">
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
           </a>
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
           </a>
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
           </a>
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
@@ -141,22 +130,22 @@
     <section class="results-band results-band--gray" aria-label="Más resultados">
       <div class="section-inner">
         <div class="results-grid">
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
           </a>
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
           </a>
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
           </a>
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
@@ -168,22 +157,22 @@
     <section class="results-band results-band--white" aria-label="Últimos resultados">
       <div class="section-inner">
         <div class="results-grid">
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
           </a>
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
           </a>
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>
           </a>
-          <a class="result-card" href="#">
+          <a class="result-card" href="./convocatoria-detalle.html">
             <div class="poster-slot poster-slot--becas">Imagen<br>Becas</div>
             <div class="result-meta"><span>Alumnos</span><time datetime="2025-09-24">24/09/25</time></div>
             <strong>Becas para mexicanos</strong>

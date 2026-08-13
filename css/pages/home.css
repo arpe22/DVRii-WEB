@@ -98,3 +98,35 @@
   font-size: 20px;
   line-height: 1.08;
 }
+
+@media (max-width: 760px) {
+  .quick-access-section {
+    padding-inline: 24px;
+  }
+
+  .quick-grid,
+  .english-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-rail {
+    position: static;
+    grid-template-columns: repeat(3, 44px);
+    justify-content: center;
+    width: auto;
+    margin-bottom: 22px;
+  }
+
+  .social-rail a {
+    height: 44px;
+  }
+
+  .about-section p {
+    font-size: 17px;
+    text-align: left;
+  }
+
+  .english-grid {
+    gap: 46px;
+  }
+}

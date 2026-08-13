@@ -2,20 +2,6 @@
   background: #fff;
 }
 
-.back-link {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  margin-top: 24px;
-  color: #111;
-  border: 3px solid #111;
-  border-radius: 50%;
-  font-size: 32px;
-  line-height: 1;
-  font-weight: 700;
-}
-
 .filters-panel {
   padding: 34px 0 58px;
 }
@@ -163,4 +149,32 @@
 .pagination a {
   min-width: 12px;
   text-align: center;
+}
+
+@media (max-width: 760px) {
+  .filters-form,
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-panel .section-title {
+    font-size: 26px;
+  }
+
+  .filter-chip:nth-of-type(1) {
+    grid-column: auto;
+  }
+
+  .result-card {
+    width: min(100%, 260px);
+  }
+
+  .result-card .poster-slot {
+    width: 100%;
+  }
+
+  .pagination {
+    justify-content: center;
+    padding-right: 0;
+  }
 }

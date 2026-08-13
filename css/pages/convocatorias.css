@@ -66,32 +66,6 @@
   font-weight: 900;
 }
 
-.poster-slot {
-  display: grid;
-  place-items: center;
-  width: 175px;
-  height: 220px;
-  padding: 16px;
-  color: #fff;
-  text-align: center;
-  border: 2px dashed rgba(255, 255, 255, .65);
-  border-radius: 4px;
-  font-weight: 800;
-}
-
-.poster-slot--becas {
-  background: linear-gradient(135deg, #a24c25, #701243);
-}
-
-.poster-slot--ieebcs {
-  background: linear-gradient(135deg, #ffdbe9, #ed2b87);
-}
-
-.poster-slot--croc {
-  background: linear-gradient(135deg, #fedb3b, #df241d 55%, #f8f8f8 56%);
-  color: #111;
-}
-
 .more-calls {
   display: grid;
   justify-items: center;
@@ -107,14 +81,21 @@
   font-weight: 900;
 }
 
-.primary-link {
-  display: grid;
-  place-items: center;
-  width: min(100%, 490px);
-  min-height: 54px;
-  color: #fff;
-  background: var(--blue-soft);
-  border-radius: 4px;
-  font-size: 20px;
-  font-weight: 900;
+@media (max-width: 760px) {
+  .page-hero h1 {
+    top: auto;
+    bottom: 38px;
+    min-width: 0;
+    width: min(92%, 430px);
+    font-size: 28px;
+  }
+
+  .calls-grid {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+
+  .more-calls h2 {
+    font-size: 26px;
+  }
 }

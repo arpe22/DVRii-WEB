@@ -1,0 +1,105 @@
+.graduates-hero {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  background: #dbe9f3;
+}
+
+.graduates-hero-media {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, .9);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  background:
+    linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05)),
+    linear-gradient(135deg, #ebf2f7, #58718a 45%, #c8e5fb);
+  border: 2px dashed rgba(255, 255, 255, .65);
+}
+
+.graduates-hero h1 {
+  position: absolute;
+  left: 50px;
+  top: 28px;
+  margin: 0;
+  padding: 10px 22px 11px 0;
+  color: #416e9e;
+  background: rgba(255, 255, 255, .78);
+  border-radius: 0 18px 18px 0;
+  font-size: 43px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.graduates-content {
+  min-height: 1425px;
+  padding: 42px 0 110px;
+  background: #fff;
+}
+
+.graduates-block {
+  max-width: 1120px;
+  margin-bottom: 82px;
+}
+
+.graduates-block:last-child {
+  margin-bottom: 0;
+}
+
+.graduates-block .section-title {
+  margin-bottom: 15px;
+  font-size: 29px;
+}
+
+.graduates-copy {
+  margin: 0 0 60px;
+  padding-left: 25px;
+  font-size: 22px;
+  line-height: 1.12;
+}
+
+.graduates-copy p {
+  margin: 0;
+}
+
+.graduates-documents {
+  padding-left: 25px;
+}
+
+@media (max-width: 760px) {
+  .graduates-hero {
+    height: 170px;
+  }
+
+  .graduates-hero h1 {
+    left: 24px;
+    top: 34px;
+    font-size: 32px;
+  }
+
+  .graduates-content {
+    min-height: auto;
+    padding-bottom: 70px;
+  }
+
+  .graduates-block .section-title {
+    font-size: 25px;
+  }
+
+  .graduates-copy {
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .graduates-documents {
+    padding-left: 0;
+  }
+
+  .document-link {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,147 @@
+.detail-page {
+  min-height: 1270px;
+  padding-top: 46px;
+  background: #fff;
+}
+
+.call-detail {
+  padding-top: 42px;
+}
+
+.call-detail-header {
+  margin-bottom: 44px;
+}
+
+.call-detail-header p {
+  margin: 0 0 3px;
+  color: #818181;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.call-detail-header h1 {
+  margin: 0;
+  font-size: 31px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.call-detail-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 430px;
+  gap: 48px;
+  align-items: start;
+}
+
+.call-copy {
+  font-size: 26px;
+  line-height: 1.08;
+  text-align: justify;
+}
+
+.call-copy p,
+.call-detail-extra {
+  margin: 0 0 8px;
+}
+
+.call-detail-poster {
+  justify-self: end;
+}
+
+.call-detail-poster .poster-slot {
+  width: 430px;
+  height: 530px;
+  border-radius: 28px;
+  font-size: 22px;
+}
+
+.call-detail-extra {
+  font-size: 26px;
+  line-height: 1.08;
+  text-align: justify;
+}
+
+.pdf-link {
+  display: inline-grid;
+  grid-template-columns: 62px auto;
+  gap: 24px;
+  align-items: center;
+  margin-top: 48px;
+  color: #858585;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.pdf-icon {
+  position: relative;
+  display: grid;
+  place-items: end center;
+  width: 56px;
+  height: 65px;
+  padding-bottom: 9px;
+  color: #fff;
+  background: linear-gradient(135deg, #dfe4e8 0 72%, #b9c0c7 73%);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.pdf-icon::after {
+  position: absolute;
+  left: -6px;
+  bottom: 11px;
+  padding: 3px 7px;
+  content: 'PDF';
+  color: #fff;
+  background: #ff4b36;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+@media (max-width: 960px) {
+  .call-detail-body {
+    grid-template-columns: 1fr;
+  }
+
+  .call-detail-poster {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .detail-page {
+    min-height: auto;
+    padding-top: 30px;
+  }
+
+  .call-detail {
+    padding-top: 30px;
+  }
+
+  .call-detail-header p {
+    font-size: 21px;
+  }
+
+  .call-detail-header h1 {
+    font-size: 28px;
+  }
+
+  .call-copy,
+  .call-detail-extra {
+    font-size: 18px;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  .call-detail-poster .poster-slot {
+    width: min(100%, 360px);
+    height: 440px;
+  }
+
+  .pdf-link {
+    margin-top: 34px;
+    font-size: 22px;
+  }
+}

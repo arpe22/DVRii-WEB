@@ -1,0 +1,35 @@
+.primary-link {
+  display: grid;
+  place-items: center;
+  width: min(100%, 490px);
+  min-height: 54px;
+  color: #fff;
+  background: var(--blue-soft);
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.back-link {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-top: 24px;
+  border: 3px solid #111;
+  border-radius: 50%;
+}
+
+.back-icon-placeholder {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  color: #111;
+  border: 2px dashed rgba(17, 17, 17, .45);
+  border-radius: 50%;
+  font-size: 7px;
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+}

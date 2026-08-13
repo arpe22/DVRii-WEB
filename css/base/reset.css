@@ -21,3 +21,9 @@ a {
   margin: 0 auto;
   padding: 0 52px;
 }
+
+@media (max-width: 760px) {
+  .section-inner {
+    padding-inline: 24px;
+  }
+}

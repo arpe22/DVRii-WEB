@@ -111,3 +111,25 @@
 .carousel-arrow--right {
   right: 14px;
 }
+
+@media (max-width: 760px) {
+  .hero-carousel,
+  .carousel-slide {
+    min-height: 360px;
+    height: 360px;
+  }
+
+  .hero-caption {
+    right: 0;
+    bottom: 40px;
+    width: min(92%, 430px);
+  }
+
+  .hero-caption h1 {
+    font-size: 28px;
+  }
+
+  .hero-caption p {
+    font-size: 18px;
+  }
+}

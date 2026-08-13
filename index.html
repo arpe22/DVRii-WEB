@@ -1,26 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DVRII | Inicio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            uabcsBlue: '#1475a8',
-            dvrBlue: '#2f80b7'
-          },
-          fontFamily: {
-            sans: ['Arial', 'Helvetica', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
-  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="./js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="./css/app.css" />
+  <link rel="stylesheet" href="./css/pages/home.css" />
 </head>
 <body class="bg-white text-neutral-950 font-sans">
   <header class="site-header">
@@ -53,11 +40,11 @@
       <nav class="mainnav" aria-label="Navegación principal DVRII">
         <a class="is-active" href="./index.html">Inicio</a>
         <a href="./pages/convocatorias.html">Convocatorias</a>
-        <a href="#">Egresados</a>
+        <a href="./pages/egresados.html">Egresados</a>
         <a class="dvr-logo" href="./index.html" aria-label="DVRII">
           <div class="logo-slot logo-slot--dvr">DVRII</div>
         </a>
-        <a href="#">Empresas y<br>Organizaciones</a>
+        <a href="./pages/empresas-organizaciones.html">Empresas y<br>Organizaciones</a>
         <a href="#">Educación<br>Continua</a>
         <a href="#">UA<br>Pichilingue</a>
       </nav>
