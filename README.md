@@ -13,6 +13,9 @@ Maquetacion frontend inicial del sitio DVRII usando HTML, CSS modular y Tailwind
 |  |- convocatoria-detalle.html
 |  |- egresados.html
 |  |- empresas-organizaciones.html
+|  |- empresas-organizaciones-ofertas.html
+|  |- empresas-organizaciones-practicas.html
+|  |- empresas-organizaciones-servicios.html
 |- assets/
 |  |- docs/
 |  |- images/
